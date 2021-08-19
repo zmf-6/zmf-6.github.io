@@ -5,15 +5,27 @@
   
 
   
-  <title>Hexo</title>
+  <title>git教程 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="git教程 查看git的版本  12[root@VM-0-9-centos software]# git --versiongit version 2.3.0   git add . 添加项目到缓存  git commit -m ‘描述’  提交到本地    推送到远程  git push origin 分支的名字(master)          提交到远程提交 不提交 node_modules">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git教程">
+<meta property="og:url" content="http://example.com/2021/08/19/git%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="git教程 查看git的版本  12[root@VM-0-9-centos software]# git --versiongit version 2.3.0   git add . 添加项目到缓存  git commit -m ‘描述’  提交到本地    推送到远程  git push origin 分支的名字(master)          提交到远程提交 不提交 node_modules">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/image-20200820154222781.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/image-20200820154347694.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/image-20200820154735838.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/image-20200820155506882.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/image-20200820155651023.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/image-20200820165727777.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/image-20200820171043714.png">
+<meta property="article:published_time" content="2021-08-19T03:13:28.000Z">
+<meta property="article:modified_time" content="2021-08-19T09:05:51.616Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/IceRain-mvc/cdn/img/image-20200820154222781.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -62,9 +74,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-git教程" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-git教程" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2021/08/19/git%E6%95%99%E7%A8%8B/" class="article-date">
   <time datetime="2021-08-19T03:13:28.000Z" itemprop="datePublished">2021-08-19</time>
@@ -77,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/19/git%E6%95%99%E7%A8%8B/">git教程</a>
+    <h1 class="article-title" itemprop="name">
+      git教程
     </h1>
   
 
@@ -172,252 +182,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-blon-online" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/08/19/blon-online/" class="article-date">
-  <time datetime="2021-08-19T02:30:30.000Z" itemprop="datePublished">2021-08-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/19/blon-online/">blon-online</a>
-    </h1>
+    <a href="/2021/08/19/blon-online/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">blon-online</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="博客怎么上线"><a href="#博客怎么上线" class="headerlink" title="博客怎么上线"></a>博客怎么上线</h1><p>1.在 github 中创建一个仓库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">仓库命名规则：</span><br><span class="line">github用户名.github.io</span><br></pre></td></tr></table></figure>
-
-<p>2.找到博客代码目录<br>3.生成静态资源文件(public)</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">命令：hexo g</span><br></pre></td></tr></table></figure>
-<p>4.将public目录复制到一个新的文件夹里面(需要把public里的文件全拿出来)</p>
-<p><img src="https://i.loli.net/2021/08/19/ZgPYpLb8DCB5Ke4.png" alt="image-20210819105359270"></p>
-<p>5.在新建文件里初始化git并且关联</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git init  #在目录里面多一个.git文件</span><br><span class="line">git add . #缓存项目</span><br><span class="line">git commit -m &quot;项目描述&quot;</span><br><span class="line">git premote add origin 远程地址</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-
-<p>6.这时候博客就成功上线啦</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">想要预览的话直接在url里输入</span><br><span class="line">github用户名.github.io</span><br><span class="line">就可以看到你的博客啦</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/19/blon-online/" data-id="cksicib3y0000ccn7dujvctq2" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-cdn" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/08/18/cdn/" class="article-date">
-  <time datetime="2021-08-18T07:22:10.000Z" itemprop="datePublished">2021-08-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/18/cdn/">cdn</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="hexo博客搭建"><a href="#hexo博客搭建" class="headerlink" title="hexo博客搭建"></a>hexo博客搭建</h1><p><img src="/images/01.png" alt="Image text"></p>
-<h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><h3 id="下载hexo"><a href="#下载hexo" class="headerlink" title="下载hexo"></a>下载hexo</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexop-cli -g</span><br></pre></td></tr></table></figure>
-
-<h3 id="创建一个博客"><a href="#创建一个博客" class="headerlink" title="创建一个博客"></a>创建一个博客</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
-
-<h3 id="启动hexo"><a href="#启动hexo" class="headerlink" title="启动hexo"></a>启动hexo</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s (server)</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>注意<br>如果使用hexo</p>
-</blockquote>
-<h3 id="搭建cdn"><a href="#搭建cdn" class="headerlink" title="搭建cdn"></a>搭建cdn</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;1.加速</span><br><span class="line">    图片类型</span><br><span class="line">    音频</span><br><span class="line">    视频</span><br><span class="line">    js</span><br><span class="line">    css</span><br><span class="line">&gt;2.创建一个github账号</span><br><span class="line">&gt;3.新建一个仓库</span><br><span class="line">&gt;4.利用jsDliver进行cdn加速</span><br></pre></td></tr></table></figure>
-<h3 id="1-新建github账号"><a href="#1-新建github账号" class="headerlink" title="1.新建github账号"></a>1.新建github账号</h3><h3 id="2-新建git仓库"><a href="#2-新建git仓库" class="headerlink" title="2.新建git仓库"></a>2.新建git仓库</h3><h3 id="3-git-clone项目"><a href="#3-git-clone项目" class="headerlink" title="3.git clone项目"></a>3.git clone项目</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone 地址</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-克隆好之后默认只有一个-git文件"><a href="#4-克隆好之后默认只有一个-git文件" class="headerlink" title="4.克隆好之后默认只有一个.git文件"></a>4.克隆好之后默认只有一个.git文件</h3><h3 id="5-这时就可以新建文件夹去放一些文件了"><a href="#5-这时就可以新建文件夹去放一些文件了" class="headerlink" title="5.这时就可以新建文件夹去放一些文件了"></a>5.这时就可以新建文件夹去放一些文件了</h3><h3 id="6-提交到github"><a href="#6-提交到github" class="headerlink" title="6.提交到github"></a>6.提交到github</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;git add . 缓存项目</span><br><span class="line">&gt;git commit -m 项目描述</span><br><span class="line">&gt;git push origin master 推到远程分支</span><br></pre></td></tr></table></figure>
-<h3 id="7-cdn加速"><a href="#7-cdn加速" class="headerlink" title="7.cdn加速"></a>7.cdn加速</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https:<span class="comment">//cdn.jsdelivr.net/gh/用户名/项目的名字/文件路径</span></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/18/cdn/" data-id="cksh63voc0001s8n74qt5h0cp" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-cdn-ssh" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/08/18/cdn-ssh/" class="article-date">
-  <time datetime="2021-08-18T07:21:45.000Z" itemprop="datePublished">2021-08-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/18/cdn-ssh/">cdn-ssh</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="刷新-DNS-解析缓存"><a href="#刷新-DNS-解析缓存" class="headerlink" title="刷新 DNS 解析缓存"></a>刷新 DNS 解析缓存</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure>
-
-
-
-<img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn/img/01.png" alt="01" style="zoom:67%;" />
-
-<p> <img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn-ssh/img/01.png" alt="image-20210819083839786"></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/18/cdn-ssh/" data-id="cksh63vo50000s8n7aj9f4trm" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-PicGo" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/08/18/PicGo/" class="article-date">
-  <time datetime="2021-08-18T07:21:45.000Z" itemprop="datePublished">2021-08-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/18/PicGo/">PicGi</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="使用-Typora-使用上传图片"><a href="#使用-Typora-使用上传图片" class="headerlink" title="使用 Typora 使用上传图片"></a>使用 Typora 使用上传图片</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.需要下载PicGo软件结合Typora使用</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>下载地址：<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a><br><img src="https://i.loli.net/2021/08/19/aibKPO9h6xTcn4C.png" alt="image-20210819092817246"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2.需要配置 PicGo 里边的 Github 设置</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/08/19/Mu7aQrtRc3TVBLi.png" alt="image-20210819093124888"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3.Token需要在Github中创建</span><br></pre></td></tr></table></figure>
-
-<p><img src="https://i.loli.net/2021/08/19/DgdfvHK9A2oUy4J.png" alt="image-20210819093355351"></p>
-<p><img src="https://i.loli.net/2021/08/19/XYIFLU4huPKJT9S.png" alt="image-20210819093927092"></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">创建好后就ok了</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/18/PicGo/" data-id="cksia6pn800005on72jlcdmg7" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2021/08/18/hello-world/" class="article-date">
-  <time datetime="2021-08-18T01:11:38.247Z" itemprop="datePublished">2021-08-18</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/08/18/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/08/18/hello-world/" data-id="cksgt5jmt0000gkn73wi6663n" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
