@@ -105,4 +105,4 @@ theme: landscape
 deploy:
   type: git
   repository: https://github.com/zmf-6/zmf-6.github.io
-  branch: master
+  branch: gh-pages
