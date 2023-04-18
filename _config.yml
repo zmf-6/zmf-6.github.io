@@ -7,13 +7,13 @@ title: Hexo       #网站标题
 subtitle: ''      #网站副标题
 description: ''   #网站描述
 keywords:         #网站关键词。支持多少个关键词
-author: John Doe  #您的名字
+author: Jun Shi  #您的名字
 language: en      #网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。
 timezone: ''      #网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai。
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com     #网址, 必须以 http:// 或 https:// 开头
+url: https://zmf-6.github.io     #网址, 必须以 http:// 或 https:// 开头
 root: #网站根目录(url's pathname)
 permalink: :year/:month/:day/:title/  #文章的 永久链接 格式
 permalink_defaults:         #永久链接中各部分的默认值
@@ -104,5 +104,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/zmf-6/zmf-6.github.io
-  branch: gh-pages
+  repo: https://github.com/zmf-6/zmf-6.github.io
+  branch: master
