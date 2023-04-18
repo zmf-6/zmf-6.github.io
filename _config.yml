@@ -3,14 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo       #网站标题
+title: 冒牌军师      #网站标题
 subtitle: ''      #网站副标题
 description: ''   #网站描述
 keywords:         #网站关键词。支持多少个关键词
 author: Jun Shi  #您的名字
 language: en      #网站使用的语言。对于简体中文用户来说，使用不同的主题可能需要设置成不同的值，请参考你的主题的文档自行设置，常见的有 zh-Hans和 zh-CN。
 timezone: ''      #网站时区。Hexo 默认使用您电脑的时区。请参考 时区列表 进行设置，如 America/New_York, Japan, 和 UTC 。一般的，对于中国大陆地区可以使用 Asia/Shanghai。
-
+tags: 睡眠,社会,功能,创意,博客,指南,自学,生命,交互,方案,人文,浪漫,音乐,古典,人生,健康
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://zmf-6.github.io     #网址, 必须以 http:// 或 https:// 开头
@@ -28,7 +28,7 @@ tag_dir: tags             #标签文件夹
 archive_dir: archives     #归档文件夹
 category_dir: categories  #分类文件夹
 code_dir: downloads/code  #Include code 文件夹，source_dir 下的子目录
-i18n_dir: :lang           #	国际化（i18n）文件夹
+i18n_dir: :lang           #国际化（i18n）文件夹
 skip_render:              #跳过指定文件的渲染。匹配到的文件将会被不做改动地复制到 public 目录中。您可使用 glob 表达式来匹配路径。
 
 # Writing
@@ -98,7 +98,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: stellar
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
