@@ -1,7 +1,7 @@
 ---
 title: Hexo+GitHub搭建个人博客 && 绑定域名
 date: 2020-07-18 12:12:35
-tags: ["Hexo", "GitHub", "博客"]
+tags: ["Hexo", "GitHub", "博客", "blog"]
 ---
 > **本篇教程完整讲述了如何利用Hexo + GitHub搭建个人博客并且绑定自己的域名，成为自己的网站！**
 
