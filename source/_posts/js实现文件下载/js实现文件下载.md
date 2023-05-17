@@ -2,6 +2,7 @@
 title: js实现文件下载
 date: 2021-08-22 20:45:12
 tags: ["js文件下载"]
+categories: js
 ---
 
 # js 下载文件实现

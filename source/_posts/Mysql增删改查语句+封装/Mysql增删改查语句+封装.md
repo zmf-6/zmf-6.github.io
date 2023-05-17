@@ -1,7 +1,8 @@
 ---
-title: mysql增删改查语句+封装
+title: Mysql增删改查语句+封装
 date: 2021-09-24 11:13:28
 tags: ["mysql"]
+categories: Myspl
 ---
 
 mysql 语句--- 增删改查
