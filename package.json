@@ -6,7 +6,8 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "server": "hexo server"
+    "server": "npm run ascii-art && hexo server",
+    "ascii-art": "node ascii-art.js"
   },
   "hexo": {
     "version": "6.3.0"

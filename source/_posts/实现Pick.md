@@ -4,7 +4,7 @@ date: 2023-06-12 16:42:45
 tags: ["TS"]
 ---
 
-### 实现Pick(中文)
+# 实现Pick(中文)
 
 ------
 
@@ -41,7 +41,7 @@ type TName = {
 
 切记不要用于interface, 否则会报错
 
-##### 用于实际开发，举个例子：
+## 用于实际开发，举个例子：
 
 ```tsx
 function getValue(o:object, key: string){
