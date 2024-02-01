@@ -388,7 +388,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-02-01
+                    2024-02-01
                 </div>
                 
 
@@ -415,7 +415,7 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="Window和Mac下载及使用nvm"><a href="#Window和Mac下载及使用nvm" class="headerlink" title="Window和Mac下载及使用nvm"></a>Window和Mac下载及使用nvm</h1><h4 id="一、NVM简介"><a href="#一、NVM简介" class="headerlink" title="一、NVM简介"></a>一、NVM简介</h4><p>在项目开发过程中，使用到vue框架技术，需要安装node下载项目依赖，但经常会遇到node版本不匹配而导致无法正常下载，重新安装node却又很麻烦。为解决以上问题，nvm：一款node的版本管理工具，能够管理node的安装和使用，使用简单，可下载指定node版本和切换使用不同版本，方便了node的使用。</p>
-<h4 id="二、NVM安装"><a href="#二、NVM安装" class="headerlink" title="二、NVM安装"></a>二、NVM安装</h4><h5 id="2-1-下载"><a href="#2-1-下载" class="headerlink" title="2.1 下载"></a>2.1 下载</h5><p>安装包下载地址：</p>
+<h4 id="二、NVM安装（Window系统）"><a href="#二、NVM安装（Window系统）" class="headerlink" title="二、NVM安装（Window系统）"></a>二、NVM安装（Window系统）</h4><h5 id="2-1-下载"><a href="#2-1-下载" class="headerlink" title="2.1 下载"></a>2.1 下载</h5><p>安装包下载地址：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://github.com/coreybutler/nvm-windows/releases</span><br></pre></td></tr></table></figure>
 
 
@@ -429,13 +429,31 @@
 <p><img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn@master/img/image-20240201150136992.webp" alt="image-20240201150136992"></p>
 <h5 id="2-3-测试"><a href="#2-3-测试" class="headerlink" title="2.3 测试"></a>2.3 测试</h5><p>打开命令行，输入nvm -v 可查看版本,即安装成功</p>
 <p><img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn@master/img/image-20240201150157756.webp" alt="image-20240201150157756"></p>
-<h4 id="三、NVM使用"><a href="#三、NVM使用" class="headerlink" title="三、NVM使用"></a>三、NVM使用</h4><h5 id="3-1-设置"><a href="#3-1-设置" class="headerlink" title="3.1 设置"></a>3.1 设置</h5><p>设置下载源，修改setting.txt</p>
+<h4 id="三、NVM安装（Mac系统）"><a href="#三、NVM安装（Mac系统）" class="headerlink" title="三、NVM安装（Mac系统）"></a>三、NVM安装（Mac系统）</h4><p>在终端执行安装命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</span><br></pre></td></tr></table></figure>
+
+<p>后边的这个v0.33.8是nvm的版本号</p>
+<p>等命令跑完之后，退出终端 重新打开</p>
+<p>成功：</p>
+<p>然后执行nvm 看看有没有反应，如果刷刷刷出一坨代码，并且最底下提示Node <a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=Version&spm=1001.2101.3001.7020">Version</a> Manager ，就说明安装成功了</p>
+<h5 id="3-1、失败问题：在mac上“curl-7-Failed-to-connect-to-raw-githubusercontent-com-port-443-Connection-refused”-安装NVM"><a href="#3-1、失败问题：在mac上“curl-7-Failed-to-connect-to-raw-githubusercontent-com-port-443-Connection-refused”-安装NVM" class="headerlink" title="3-1、失败问题：在mac上“curl: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused”-安装NVM"></a>3-1、失败问题：在mac上“<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=curl&spm=1001.2101.3001.7020">curl</a>: (7) Failed to connect to raw.githubusercontent.com port 443: Connection refused”-安装NVM</h5><p>安装失败的可能原因是没有初始化Xcode</p>
+<p>我在网上找了很多资料<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/Homebrew/install/master/install%E8%AF%B4%E7%9A%84%E9%83%BD%E6%98%AF%E6%89%93%E5%BC%80%E7%9D%80%E4%B8%AA%E7%BD%91%E5%9D%80%EF%BC%8C%E6%88%91%E6%89%93%E4%B8%8D%E5%BC%80">https://raw.githubusercontent.com/Homebrew/install/master/install说的都是打开着个网址，我打不开</a><br>所以下面是我的解决办法:</p>
+<h6 id="1-打开网站https-www-ipaddress-com"><a href="#1-打开网站https-www-ipaddress-com" class="headerlink" title="1.打开网站https://www.ipaddress.com/"></a>1.打开网站<a target="_blank" rel="noopener" href="https://www.ipaddress.com/">https://www.ipaddress.com/</a></h6><h6 id="2-查询一下-raw-githubusercontent-com对应的IP-地址"><a href="#2-查询一下-raw-githubusercontent-com对应的IP-地址" class="headerlink" title="2.查询一下 raw.githubusercontent.com对应的IP 地址"></a>2.查询一下 raw.githubusercontent.com对应的IP 地址</h6><h6 id="3-替换系统的host文件"><a href="#3-替换系统的host文件" class="headerlink" title="3.替换系统的host文件"></a>3.替换系统的host文件</h6><p><img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn@master/img/image-20240201151534025.webp" alt="image-20240201151534025"></p>
+<h6 id="4-写上：-199-232-68-133-raw-githubusercontent-com"><a href="#4-写上：-199-232-68-133-raw-githubusercontent-com" class="headerlink" title="4 写上： 199.232.68.133 raw.githubusercontent.com"></a>4 写上： 199.232.68.133 raw.githubusercontent.com</h6><h6 id="5-重新执行第一章的命令，进行重新安装。"><a href="#5-重新执行第一章的命令，进行重新安装。" class="headerlink" title="5.重新执行第一章的命令，进行重新安装。"></a>5.重新执行第一章的命令，进行重新安装。</h6><h5 id="3-2、失败问题二如果提示是：command-not-found-nvm，就是安装失败了。"><a href="#3-2、失败问题二如果提示是：command-not-found-nvm，就是安装失败了。" class="headerlink" title="3-2、失败问题二如果提示是：command not found: nvm，就是安装失败了。"></a>3-2、失败问题二如果提示是：command not found: nvm，就是安装失败了。</h5><p>失败原因很有可能是因为电脑里边缺少一个叫做 .bash_profile 的文件，这个文件是一个隐藏文件，目录在&#x2F;Users&#x2F;YourMacUserName&#x2F;.bash_profile</p>
+<p>如果你的电脑默认是不显示隐藏文件 可以通过快捷键 command+shift+.（这里有个点儿 .）来显示出来<br>如果你的电脑里没有这个文件 那就新建一个 ，如果有了，那就双击打开 ，把下边的代码复制粘贴进去，然后保存。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export NVM_DIR=&quot;$HOME/.nvm&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR/nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR/nvm.sh&quot;  # This loads nvm</span><br><span class="line">[ -s &quot;$NVM_DIR/bash_completion&quot; ] &amp;&amp; \. &quot;$NVM_DIR/bash_completion&quot; </span><br></pre></td></tr></table></figure>
+
+<p>保存完了之后 回到终端，再次执行安装命令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash</span><br></pre></td></tr></table></figure>
+
+<p>记得安装完之后退出 重新开打终端啊</p>
+<h4 id="四、NVM使用"><a href="#四、NVM使用" class="headerlink" title="四、NVM使用"></a>四、NVM使用</h4><h5 id="4-1-设置"><a href="#4-1-设置" class="headerlink" title="4.1 设置"></a>4.1 设置</h5><p>设置下载源，修改setting.txt</p>
 <p>在安装根路径下编辑setting.txt</p>
 <p><img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn@master/img/image-20240201150220139.webp" alt="image-20240201150220139"></p>
 <p>添加以下两行镜像地址</p>
 <p>node_mirror: <a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/node/">https://npm.taobao.org/mirrors/node/</a><br>npm_mirror: <a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/npm/">https://npm.taobao.org/mirrors/npm/</a></p>
 <p><img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn@master/img/image-20240201150247792.webp" alt="image-20240201150247792"></p>
-<h5 id="3-2-使用"><a href="#3-2-使用" class="headerlink" title="3.2 使用"></a>3.2 使用</h5><p>1.nvm list available &#x2F;&#x2F; 显示可以安装的所有node.js的版本</p>
+<h5 id="4-2-使用"><a href="#4-2-使用" class="headerlink" title="4.2 使用"></a>4.2 使用</h5><p>1.nvm list available &#x2F;&#x2F; 显示可以安装的所有node.js的版本</p>
 <p><img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn@master/img/image-20240201150322791.webp" alt="image-20240201150322791"></p>
 <p>2.nvm install 16.13.1 &#x2F;&#x2F; 安装node.js的命名 version是版本</p>
 <p>3.nvm list &#x2F;&#x2F;查看已安装的node.js</p>
@@ -444,9 +462,11 @@
 <li>表示当前使用的node版本是16.13.1</li>
 </ul>
 <p><img src="https://cdn.jsdelivr.net/gh/zmf-6/cdn@master/img/image-20240201150345688.webp" alt="image-20240201150345688"></p>
-<h4 id="四、NVM常用命令"><a href="#四、NVM常用命令" class="headerlink" title="四、NVM常用命令"></a>四、NVM常用命令</h4><p>nvm off                     &#x2F;&#x2F; 禁用node.js版本管理(不卸载任何东西)<br>nvm on                      &#x2F;&#x2F; 启用node.js版本管理<br>nvm install <version>       &#x2F;&#x2F; 安装node.js的命名 version是版本号 例如：nvm install 8.12.0<br>nvm uninstall <version>     &#x2F;&#x2F; 卸载node.js是的命令，卸载指定版本的nodejs，当安装失败时卸载使用<br>nvm ls                      &#x2F;&#x2F; 显示所有安装的node.js版本<br>nvm list available          &#x2F;&#x2F; 显示可以安装的所有node.js的版本<br>nvm use <version>           &#x2F;&#x2F; 切换到使用指定的nodejs版本<br>nvm v                       &#x2F;&#x2F; 显示nvm版本<br>nvm install stable          &#x2F;&#x2F; 安装最新稳定版</p>
-<h4 id="五、NVM常见异常"><a href="#五、NVM常见异常" class="headerlink" title="五、NVM常见异常"></a>五、NVM常见异常</h4><p>1.nvm use失效 无法使用node<br>原因：在安装nvm的时候修改了nodejs的安装路径，但安装包并未在指定路径新建nodejs</p>
+<h4 id="五、NVM常用命令"><a href="#五、NVM常用命令" class="headerlink" title="五、NVM常用命令"></a>五、NVM常用命令</h4><p>nvm off                     &#x2F;&#x2F; 禁用node.js版本管理(不卸载任何东西)<br>nvm on                      &#x2F;&#x2F; 启用node.js版本管理<br>nvm install <version>       &#x2F;&#x2F; 安装node.js的命名 version是版本号 例如：nvm install 8.12.0<br>nvm uninstall <version>     &#x2F;&#x2F; 卸载node.js是的命令，卸载指定版本的nodejs，当安装失败时卸载使用<br>nvm ls                      &#x2F;&#x2F; 显示所有安装的node.js版本<br>nvm list available          &#x2F;&#x2F; 显示可以安装的所有node.js的版本<br>nvm use <version>           &#x2F;&#x2F; 切换到使用指定的nodejs版本<br>nvm v                       &#x2F;&#x2F; 显示nvm版本<br>nvm install stable          &#x2F;&#x2F; 安装最新稳定版</p>
+<h4 id="六、NVM常见问题"><a href="#六、NVM常见问题" class="headerlink" title="六、NVM常见问题"></a>六、NVM常见问题</h4><h6 id="1-nvm-use失效-无法使用node"><a href="#1-nvm-use失效-无法使用node" class="headerlink" title="1.nvm use失效 无法使用node"></a>1.nvm use失效 无法使用node</h6><p>原因：在安装nvm的时候修改了nodejs的安装路径，但安装包并未在指定路径新建nodejs</p>
 <p>解决：在指定路径手动新建nodejs文件夹，重新安装并指定路径</p>
+<h6 id="2-在mac和liunx系统里边-nvm-use-切换的是当次版本-下次打开终端-还是之前的node版本"><a href="#2-在mac和liunx系统里边-nvm-use-切换的是当次版本-下次打开终端-还是之前的node版本" class="headerlink" title="2.在mac和liunx系统里边 nvm use 切换的是当次版本 下次打开终端 还是之前的node版本"></a>2.在mac和liunx系统里边 nvm use 切换的是当次版本 下次打开终端 还是之前的node版本</h6><p>要想永久切换 使用nvm alias default （版本号）</p>
+<p>参考链接： <a target="_blank" rel="noopener" href="https://blog.csdn.net/itwangyang520/article/details/105621069">https://blog.csdn.net/itwangyang520/article/details/105621069</a><br><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c3c44a021d08">https://www.jianshu.com/p/c3c44a021d08</a></p>
 
                 
             </div>
@@ -473,7 +493,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zmf-6.github.io/2023/02/01/window-he-mac-xia-zai-ji-shi-yong-nvm/">https://zmf-6.github.io/2023/02/01/window-he-mac-xia-zai-ji-shi-yong-nvm/</a>
+                    <a href="https://zmf-6.github.io/2024/02/01/window-he-mac-xia-zai-ji-shi-yong-nvm/">https://zmf-6.github.io/2024/02/01/window-he-mac-xia-zai-ji-shi-yong-nvm/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -591,17 +611,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/03/02/neovis.js-neo4j-visualization/">
+                <a href="/2024/02/01/window-he-mac-xia-zai-ji-shi-yong-nvm/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="Neovis.js可视化Neo4j数据库">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="Window和Mac下载及使用nvm">
                         
-                        <span class="card-title">Neovis.js可视化Neo4j数据库</span>
+                        <span class="card-title">Window和Mac下载及使用nvm</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -611,9 +632,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-02
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-02-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -622,19 +643,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Neovis-js/">
-                        <span class="chip bg-color">Neovis.js</span>
-                    </a>
-                    
-                    <a href="/tags/Neo4j/">
-                        <span class="chip bg-color">Neo4j</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93/">
-                        <span class="chip bg-color">图数据库</span>
+                    <a href="/tags/nvm/">
+                        <span class="chip bg-color">nvm</span>
                     </a>
                     
                 </div>
@@ -648,13 +662,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/09/03/promise-zhong-de-yi-chang-bu-huo-quan-ju/promise-zhong-de-yi-chang-bu-huo-quan-ju/">
+                <a href="/2024/01/11/bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="promise中的异常捕获_全局">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="笔记">
                         
-                        <span class="card-title">promise中的异常捕获_全局</span>
+                        <span class="card-title">笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -665,16 +679,12 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2024-01-11
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/promise/" class="post-category">
-                                    promise
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Jun Shi
                             
                         </span>
                     </div>
@@ -682,8 +692,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/promise/">
-                        <span class="chip bg-color">promise</span>
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
                     </a>
                     
                 </div>
